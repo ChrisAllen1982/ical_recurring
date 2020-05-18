@@ -1,0 +1,6 @@
+{
+  "name": "Recurring ICS calendar",
+  "country": "EN",
+  "homeassistant": "0.109.4",
+  "render_readme": true
+}
