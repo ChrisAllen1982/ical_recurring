@@ -116,7 +116,8 @@ class ICSCalendarData:
     async def async_get_events(self, start_date, end_date):
         """Get all events in a specific time frame."""
         event_list = []
-
+        event_items = []
+        
         try:
 	        events_items = ical.latest_events(self.name)
 	        _LOGGER.debug("Got Events for %s", self.name )
