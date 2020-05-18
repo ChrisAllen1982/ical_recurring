@@ -1,0 +1,10 @@
+{
+    "domain": "ics_recurring",
+    "name": "ics Calendar",
+    "documentation": "https://github.com/ChrisAllen1982/ics_recurring",
+    "requirements": ["icalevents", "arrow"],
+    "dependencies": [],
+    "homeassistant": "0.97.0",
+    "codeowners": ["@ChrisAllen1982"]
+
+}
