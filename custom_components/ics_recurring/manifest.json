@@ -5,6 +5,7 @@
     "requirements": ["icalevents", "arrow"],
     "dependencies": [],
     "homeassistant": "0.97.0",
+    "version": "0.0.1",
     "codeowners": ["@ChrisAllen1982"]
 
 }
