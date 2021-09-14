@@ -133,6 +133,7 @@ class ICSCalendarData:
                 uid = event.uid
             data = {
                 'uid': uid,
+	        'summary': event.summary,
                 'title': event.summary,
                 'start': self.get_date_formatted(event.start, event.all_day),
                 'end': self.get_date_formatted(event.end, event.all_day),
