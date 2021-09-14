@@ -119,15 +119,15 @@ class ICSCalendarData:
         event_items = []
         
         try:
-	        events_items = ical.latest_events(self.name)
+	        event_items = ical.latest_events(self.name)
 	        _LOGGER.debug("Got Events for %s", self.name )
 	       
        	except:
        		None
        		
-        #events_items = ical.events(self.url, None, None, start_date, end_date )
+        #event_items = ical.events(self.url, None, None, start_date, end_date )
 
-        for event in events_items:
+        for event in event_items:
             uid = None
             if hasattr(event, 'uid'):
                 uid = event.uid
@@ -156,7 +156,7 @@ class ICSCalendarData:
 
         event_items = []
         try:
-        	events_items = ical.latest_events(self.name)
+        	event_items = ical.latest_events(self.name)
         	_LOGGER.debug("Got Events %s", self.name )
         except:
         	None
@@ -165,7 +165,7 @@ class ICSCalendarData:
 
         right_now = arrow.utcnow()
 
-        for event in events_items:
+        for event in event_items:
 
             ar_start = arrow.get(event.start)
             ar_end = arrow.get(event.end)
